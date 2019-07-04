@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    tools:context=".Home">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -13,14 +15,37 @@
         android:id="@+id/layout1"
         android:background="@color/colorWhite"
         >
+        <LinearLayout
+            android:id="@+id/typing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="60">
 
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/display_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="70"
+        android:layout_weight="65"
         android:orientation="horizontal"
         android:id="@+id/layout2"
         android:background="@color/colorBlack"
@@ -34,9 +59,9 @@
             android:id="@+id/inner1"
             >
             <LinearLayout
-                android:layout_width="33dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="40"
+                android:layout_weight="33"
                 android:orientation="vertical"
                 android:id="@+id/inner4"
                 >
@@ -47,7 +72,7 @@
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="40sp"
-                    android:id="@+id/tv_8"
+                    android:id="@+id/tv_7"
                     android:layout_margin="15dp"
                     />
 
@@ -59,6 +84,7 @@
                     android:textStyle="bold"
                     android:layout_margin="15dp"
                     android:textSize="40sp"
+                    android:id="@+id/tv_4"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -67,12 +93,14 @@
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="40sp"
+                    android:id="@+id/tv_1"
                     android:layout_margin="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="."
+                    android:id="@+id/tv_dot"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="40sp"
@@ -84,57 +112,61 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="33"
                 android:orientation="vertical"
                 >
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:textSize="40sp"
-                android:id="@+id/tv_7"
-                android:layout_margin="15dp"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:id="@+id/tv_8"
+                    android:layout_margin="15dp"
+                    />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:layout_margin="15dp"
-                android:textSize="40sp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:textSize="40sp"
-                android:layout_margin="15dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:textSize="40sp"
-                android:layout_margin="15dp"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/tv_5"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    android:textSize="40sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/tv_2"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:layout_margin="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tv_zero"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:layout_margin="15dp"
+                    />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="33dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="40"
+                android:layout_weight="33"
                 android:orientation="vertical"
                 android:id="@+id/inner5"
                 >
@@ -153,6 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6"
+                    android:id="@+id/tv_six"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:layout_margin="15dp"
@@ -162,6 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3"
+                    android:id="@+id/tv_3"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="40sp"
@@ -171,6 +205,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="="
+                    android:id="@+id/tv_equals"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="40sp"
@@ -186,20 +221,6 @@
 
 
 
-
-            <LinearLayout
-                android:layout_width="33dp"
-                android:layout_height="match_parent"
-                android:layout_weight="40"
-                android:orientation="vertical"
-                android:id="@+id/inner3"
-
-
-                >
-
-
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -220,18 +241,29 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="/"
+                    android:text="DEL"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="30sp"
-                    android:id="@+id/tv_10"
+                    android:id="@+id/tv_del"
+                    android:layout_margin="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  /"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:id="@+id/tv_div"
                     android:layout_margin="15dp"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="x"
+                    android:text="  x"
+                    android:id="@+id/tv_mult"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:layout_margin="15dp"
@@ -240,7 +272,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"
+                    android:text="  -"
+                    android:id="@+id/tv_min"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="30sp"
@@ -249,7 +282,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+"
+                    android:text="  +"
+                    android:id="@+id/tv_add"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
                     android:textSize="30sp"
@@ -268,56 +302,4 @@
 
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
