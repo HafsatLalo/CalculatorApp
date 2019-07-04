@@ -34,9 +34,9 @@
             android:id="@+id/inner1"
             >
             <LinearLayout
-                android:layout_width="33dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="40"
+                android:layout_weight="33"
                 android:orientation="vertical"
                 android:id="@+id/inner4"
                 >
@@ -84,7 +84,8 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="33"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 >
@@ -132,9 +133,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="33dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="40"
+                android:layout_weight="33"
                 android:orientation="vertical"
                 android:id="@+id/inner5"
                 >
@@ -185,21 +186,6 @@
 
 
 
-
-
-            <LinearLayout
-                android:layout_width="33dp"
-                android:layout_height="match_parent"
-                android:layout_weight="40"
-                android:orientation="vertical"
-                android:id="@+id/inner3"
-
-
-                >
-
-
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
