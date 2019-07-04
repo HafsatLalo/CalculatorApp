@@ -5,5 +5,8 @@
     <color name="colorAccent">#ffff00</color>
     <color name="puru">#cd853f</color>
     <color name="brown">#8b4513</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorAsh">#807272</color>
 </resources>
     
